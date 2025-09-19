@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Lesson 4 Web Project</title>
+  
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>My Grocery List</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #fdf6e3;
+      margin: 0;
+      padding: 20px;
+    }
+
+    h1 {
+      text-align: center;
+      color: #2d6a4f;
+    }
+
+    /* --- Main Activity CSS: Form --- */
+    .grocery-form {
+      background: #fff;
+      padding: 20px;
+      max-width: 400px;
+      margin: 20px auto;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+
+    .grocery-form label {
+      display: block;
+      margin: 10px 0 5px;
+      color: #40916c;
+    }
+
+    .grocery-form input, .grocery-form select {
+      width: 100%;
+      padding: 8px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      margin-bottom: 12px;
+    }
+
+    .grocery-form button {
+      width: 100%;
+      padding: 10px;
+      background: #2d6a4f;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+    .grocery-form button:hover {
+      background: #1b4332;
+    }
+    /* --- End of Main Activity CSS --- */
+
+
+    /* --- Additional Activity CSS: Table --- */
+    table {
+      width: 80%;
+      margin: 30px auto;
+      border-collapse: collapse;
+      background: white;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+
+    th, td {
+      padding: 12px;
+      text-align: center;
+      border-bottom: 1px solid #ddd;
+    }
+
+    th {
+      background: #2d6a4f;
+      color: white;
+    }
+
+    tr:hover {
+      background: #f1f1f1;
+    }
+    /* --- End of Additional Activity CSS --- */
+  </style>
+</head>
+<body>
+  <h1>My Grocery List</h1>
+
+  <!-- ========== Main Activity: Grocery Form ========== -->
+  <div class="grocery-form">
+    <label for="item">Grocery Item</label>
+    <input type="text" id="item" placeholder="e.g. Apples">
+
+    <label for="quantity">Quantity</label>
+    <input type="number" id="quantity" min="1" placeholder="e.g. 5">
+
+    <label for="category">Category</label>
+    <select id="category">
+      <option>Fruits</option>
+      <option>Vegetables</option>
+      <option>Dairy</option>
+      <option>Snacks</option>
+    </select>
+
+    <button>Add to List</button>
+  </div>
+  <!-- ========== End of Main Activity ========== -->
+
+
+  <!-- ========== Additional Activity: Grocery Table ========== -->
+  <table>
+    <tr>
+      <th>Item</th>
+      <th>Quantity</th>
+      <th>Category</th>
+    </tr>
+    <tr>
+      <td>Milk</td>
+      <td>2</td>
+      <td>Dairy</td>
+    </tr>
+    <tr>
+      <td>Tomatoes</td>
+      <td>6</td>
+      <td>Vegetables</td>
+    </tr>
+    <tr>
+      <td>Chips</td>
+      <td>3</td>
+      <td>Snacks</td>
+    </tr>
+  </table>
+  <!-- ========== End of Additional Activity ========== -->
+
+</body>
+</html>
+<!-- partial -->
+  
+</body>
+</html>

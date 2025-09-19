@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Lesson 9 Project</title>
+  
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Space Exploration Scrollspy</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      position: relative;
+    }
+    section {
+      height: 100vh;
+      padding: 50px;
+      color: white;
+      text-align: center;
+    }
+    #earth { background: linear-gradient(to right, #2c3e50, #3498db); }
+    #rockets { background: linear-gradient(to right, #0f2027, #203a43, #2c5364); }
+    #astronauts { background: linear-gradient(to right, #1e3c72, #2a5298); }
+    #galaxies { background: linear-gradient(to right, #000000, #434343); }
+    #facts { background: #111; padding: 40px; }
+    .fact-card {
+      background: #222;
+      color: #eee;
+      padding: 20px;
+      border-radius: 10px;
+      margin: 10px 0;
+      transition: transform 0.3s ease;
+    }
+    .fact-card:hover {
+      transform: scale(1.05);
+    }
+  </style>
+</head>
+<body data-bs-spy="scroll" data-bs-target="#navbar" data-bs-offset="50" tabindex="0">
+
+  <!-- Navbar -->
+  <nav id="navbar" class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">🚀 Space Exploration</a>
+      <div class="collapse navbar-collapse">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#earth">🌍 Earth</a></li>
+          <li class="nav-item"><a class="nav-link" href="#rockets">🚀 Rockets</a></li>
+          <li class="nav-item"><a class="nav-link" href="#astronauts">👩‍🚀 Astronauts</a></li>
+          <li class="nav-item"><a class="nav-link" href="#galaxies">🌌 Galaxies</a></li>
+          <li class="nav-item"><a class="nav-link" href="#facts">✨ Mission Facts</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Sections -->
+  <section id="earth">
+    <h1>🌍 Earth</h1>
+    <p>Our home planet, the only known place in the universe with life.</p>
+  </section>
+
+  <section id="rockets">
+    <h1>🚀 Rockets</h1>
+    <p>Rockets power our journey to space, breaking Earth's gravity barrier.</p>
+  </section>
+
+  <section id="astronauts">
+    <h1>👩‍🚀 Astronauts</h1>
+    <p>Brave explorers who venture beyond our planet to uncover the mysteries of space.</p>
+  </section>
+
+  <section id="galaxies">
+    <h1>🌌 Galaxies</h1>
+    <p>Massive systems of stars, planets, gas, and dust held together by gravity.</p>
+  </section>
+
+  <!-- Additional Activity Section -->
+  <section id="facts">
+    <h2>✨ Mission Facts</h2>
+    <div class="fact-card">🌕 The first human landed on the Moon in 1969.</div>
+    <div class="fact-card">🛰️ The International Space Station orbits Earth every 90 minutes.</div>
+    <div class="fact-card">🌌 There are more stars in the universe than grains of sand on Earth.</div>
+    <div class="fact-card">🚀 Rockets can travel at speeds over 28,000 km/h to escape Earth’s gravity.</div>
+  </section>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+<!-- partial -->
+  
+</body>
+</html>

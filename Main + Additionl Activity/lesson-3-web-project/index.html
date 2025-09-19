@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Lesson 3 Web Project</title>
+  
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Main Activity: Set up document metadata -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Art Gallery Preview</title>
+</head>
+<body>
+    <!-- Main Activity: Create header with gallery title -->
+    <header>
+        <h1>My Art Gallery</h1>
+    </header>
+    
+    <!-- Main Activity: Create main content with artwork previews -->
+    <main>
+        <section class="artwork">
+            <h2>Starry Night</h2>
+            <p>Vincent van Gogh's swirling masterpiece.</p>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Van_Gogh_-_Starry_Night_-_Google_Art_Project.jpg/1200px-Van_Gogh_-_Starry_Night_-_Google_Art_Project.jpg" alt="Starry Night Artwork">
+        </section>
+        <section class="artwork">
+            <h2>Mona Lisa</h2>
+            <p>Leonardo da Vinci's enigmatic portrait.</p>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/Mona_Lisa%2C_by_Leonardo_da_Vinci%2C_from_C2RMF_retouched.jpg/1200px-Mona_Lisa%2C_by_Leonardo_da_Vinci%2C_from_C2RMF_retouched.jpg" alt="Mona Lisa Artwork">
+        </section>
+        <section class="artwork">
+            <h2>The Scream</h2>
+            <p>Edvard Munch's iconic expressionist work.</p>
+            <img src="https://i.guim.co.uk/img/media/8a840f693b91fe67d42555b24c6334e9298f4680/251_1497_2178_1306/master/2178.jpg?width=1200&quality=85&auto=format&fit=max&s=9cf966f03ed4359b5746b36a36d83cdc" alt="The Scream Artwork">
+        </section>
+    </main>
+    
+    <!-- Additional Activity: Apply CSS styling with Grid -->
+    <style type="text/css">
+        /* Style body and overall layout */
+        body { font-family: Arial, sans-serif; background-color: #fff0f0; margin: 20px; color: #333; }
+        /* Style header */
+        header { background-color: #d32f2f; text-align: center; padding: 10px; border-radius: 5px; outline: 3px solid #b71c1c; }
+        header h1 { color: #fff; margin: 0; }
+        /* Style main content with CSS Grid */
+        main { max-width: 900px; margin: 20px auto; display: grid; grid-template-columns: repeat(3, 1fr); gap: 15px; }
+        /* Style artwork sections with outline borders */
+        .artwork { background-color: #fff; outline: 2px solid #d32f2f; border-radius: 5px; padding: 10px; text-align: center; }
+        .artwork h2 { color: #b71c1c; margin: 5px 0; }
+        .artwork img { width: 100px; height: 100px; object-fit: cover; }
+    </style>
+</body>
+</html>
+<!-- partial -->
+  
+</body>
+</html>

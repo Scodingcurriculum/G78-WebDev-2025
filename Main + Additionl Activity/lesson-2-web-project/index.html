@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Lesson 2 Web Project</title>
+  
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Main Activity: Set up document metadata -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library Catalog Showcase</title>
+</head>
+<body>
+    <!-- Main Activity: Create header with title and toggle button -->
+    <header>
+        <h1>My Library Catalog</h1>
+        <button id="toggleBtn">Hide Books</button>
+    </header>
+    
+    <!-- Main Activity: Create main content with book entries -->
+    <main id="bookList">
+        <section class="book">
+            <h2>Dune</h2>
+            <p>Frank Herbert's sci-fi epic.</p>
+            <img src="https://m.media-amazon.com/images/I/41rrXYM-wHL._SL500_.jpg" alt="Dune Book Cover">
+        </section>
+        <section class="book">
+            <h2>1984</h2>
+            <p>George Orwell's dystopian tale.</p>
+            <img src="https://i.etsystatic.com/17937725/r/il/7df2de/6117642888/il_fullxfull.6117642888_abca.jpg" alt="1984 Book Cover">
+        </section>
+        <section class="book">
+            <h2>Pride and Prejudice</h2>
+            <p>Jane Austen's classic romance.</p>
+            <img src="https://m.media-amazon.com/images/I/81a3sr-RgdL.jpg" alt="Pride and Prejudice Book Cover">
+        </section>
+    </main>
+    
+    <!-- Additional Activity: Apply CSS styling and JavaScript interactivity -->
+    <style type="text/css">
+        /* Style body and overall layout */
+        body { font-family: Arial, sans-serif; background-color: #f4faff; margin: 20px; color: #333; }
+        /* Style header and button */
+        header { background-color: #4a90e2; text-align: center; padding: 10px; border-radius: 5px; }
+        header h1 { color: #fff; margin: 0; }
+        button { background-color: #fff; border: 2px solid #4a90e2; padding: 5px 10px; cursor: pointer; }
+        /* Style main content with flexbox */
+        main { max-width: 800px; margin: 20px auto; display: flex; gap: 20px; flex-wrap: wrap; }
+        /* Style book sections */
+        .book { background-color: #fff; border: 2px solid #4a90e2; border-radius: 5px; padding: 10px; text-align: center; flex: 1; min-width: 200px; }
+        .book img { width: 100px; height: 150px; object-fit: cover; }
+    </style>
+    <script type="text/javascript">
+        /* JavaScript to toggle book visibility */
+        const btn = document.getElementById('toggleBtn');
+        const books = document.getElementById('bookList');
+        btn.onclick = () => {
+            books.style.display = books.style.display === 'none' ? 'flex' : 'none';
+            btn.textContent = books.style.display === 'none' ? 'Show Books' : 'Hide Books';
+        };
+    </script>
+</body>
+</html>
+<!-- partial -->
+  
+</body>
+</html>
