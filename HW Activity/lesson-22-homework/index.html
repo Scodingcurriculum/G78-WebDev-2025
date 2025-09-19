@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Lesson 22 Homework</title>
+  
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Company Dashboard</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
+    <style>
+        body {
+            background: #f0f2f5;
+            font-family: 'Segoe UI', sans-serif;
+        }
+        .card {
+            border-radius: 1rem;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+        }
+        .gradient-bg {
+            background: linear-gradient(135deg, #6f42c1, #d63384);
+            color: #fff;
+        }
+        .metric-card {
+            border-radius: 1rem;
+            background: linear-gradient(135deg, #0dcaf0, #198754);
+            color: #fff;
+            padding: 1rem;
+            text-align: center;
+        }
+        .badge-custom {
+            background: linear-gradient(135deg, #ff922b, #f03e3e);
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container py-5">
+
+    <!-- Team Section -->
+    <section class="mb-5">
+        <h2 class="mb-4"><i class="bi bi-people-fill me-2"></i>Team Members</h2>
+        <div class="row g-4">
+            <div class="col-12 col-md-6 col-lg-3">
+                <div class="card text-center p-3 gradient-bg">
+                    <h5>John Doe</h5>
+                    <p class="mb-1">CEO</p>
+                    <span class="badge bg-light text-dark">Available</span>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3">
+                <div class="card text-center p-3 gradient-bg">
+                    <h5>Mary Smith</h5>
+                    <p class="mb-1">CTO</p>
+                    <span class="badge bg-light text-dark">Busy</span>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3">
+                <div class="card text-center p-3 gradient-bg">
+                    <h5>Alex Lee</h5>
+                    <p class="mb-1">Marketing</p>
+                    <span class="badge bg-light text-dark">Available</span>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3">
+                <div class="card text-center p-3 gradient-bg">
+                    <h5>Sara Khan</h5>
+                    <p class="mb-1">Finance</p>
+                    <span class="badge bg-light text-dark">Away</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Departments Section -->
+    <section class="mb-5">
+        <h2 class="mb-4"><i class="bi bi-building me-2"></i>Departments</h2>
+        <div class="row row-cols-2 row-cols-md-4 g-3 text-center">
+            <div class="col">
+                <div class="card p-3 feature-card gradient-bg">
+                    <i class="bi bi-laptop h2 mb-2"></i>
+                    <p class="mb-0">IT</p>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card p-3 feature-card gradient-bg">
+                    <i class="bi bi-graph-up h2 mb-2"></i>
+                    <p class="mb-0">Marketing</p>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card p-3 feature-card gradient-bg">
+                    <i class="bi bi-cash-stack h2 mb-2"></i>
+                    <p class="mb-0">Finance</p>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card p-3 feature-card gradient-bg">
+                    <i class="bi bi-people h2 mb-2"></i>
+                    <p class="mb-0">HR</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- KPIs Section -->
+    <section>
+        <h2 class="mb-4"><i class="bi bi-bar-chart-line-fill me-2"></i>Key Metrics</h2>
+        <div class="row g-4">
+            <div class="col-6 col-md-3">
+                <div class="metric-card">
+                    <h3 class="mb-1">120+</h3>
+                    <p class="mb-0">Projects</p>
+                </div>
+            </div>
+            <div class="col-6 col-md-3">
+                <div class="metric-card">
+                    <h3 class="mb-1">98%</h3>
+                    <p class="mb-0">Customer Satisfaction</p>
+                </div>
+            </div>
+            <div class="col-6 col-md-3">
+                <div class="metric-card">
+                    <h3 class="mb-1">15</h3>
+                    <p class="mb-0">Awards</p>
+                </div>
+            </div>
+            <div class="col-6 col-md-3">
+                <div class="metric-card">
+                    <h3 class="mb-1">45</h3>
+                    <p class="mb-0">Partners</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</div>
+
+</body>
+</html>
+<!-- partial -->
+  
+</body>
+</html>

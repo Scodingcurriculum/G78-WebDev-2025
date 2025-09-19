@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Lesson 4 Homework</title>
+  
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>My Book Collection</title>
+  <style>
+    body {
+      font-family: Georgia, serif;
+      background: #f8f9fa;
+      margin: 0;
+      padding: 20px;
+    }
+
+    h1 {
+      text-align: center;
+      color: #6c3483;
+    }
+
+    /* Single Activity Styling */
+    .book-section {
+      background: #fff;
+      padding: 20px;
+      max-width: 500px;
+      margin: 20px auto;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    .book-section label {
+      display: block;
+      margin: 8px 0 4px;
+      font-weight: bold;
+      color: #4a235a;
+    }
+
+    .book-section input, .book-section select {
+      width: 100%;
+      padding: 8px;
+      border: 1px solid #bbb;
+      border-radius: 6px;
+      margin-bottom: 12px;
+    }
+
+    .book-section button {
+      width: 100%;
+      padding: 10px;
+      background: #6c3483;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+    .book-section button:hover {
+      background: #4a235a;
+    }
+
+    table {
+      width: 100%;
+      margin-top: 20px;
+      border-collapse: collapse;
+      background: #fdfdfd;
+    }
+
+    th, td {
+      padding: 10px;
+      text-align: center;
+      border: 1px solid #ddd;
+    }
+
+    th {
+      background: #6c3483;
+      color: white;
+    }
+
+    tr:nth-child(even) {
+      background: #f3e5f5;
+    }
+  </style>
+</head>
+<body>
+  <h1>My Book Collection</h1>
+
+  <!-- ========== Homework: Single Activity ========== -->
+  <div class="book-section">
+    <label for="title">Book Title</label>
+    <input type="text" id="title" placeholder="e.g. The Alchemist">
+
+    <label for="author">Author</label>
+    <input type="text" id="author" placeholder="e.g. Paulo Coelho">
+
+    <label for="genre">Genre</label>
+    <select id="genre">
+      <option>Fiction</option>
+      <option>Non-fiction</option>
+      <option>Fantasy</option>
+      <option>Science</option>
+    </select>
+
+    <button>Add Book</button>
+
+    <!-- Directly showing a table inside the same section -->
+    <table>
+      <tr>
+        <th>Title</th>
+        <th>Author</th>
+        <th>Genre</th>
+      </tr>
+      <tr>
+        <td>Harry Potter</td>
+        <td>J.K. Rowling</td>
+        <td>Fantasy</td>
+      </tr>
+      <tr>
+        <td>Atomic Habits</td>
+        <td>James Clear</td>
+        <td>Non-fiction</td>
+      </tr>
+      <tr>
+        <td>The Alchemist</td>
+        <td>Paulo Coelho</td>
+        <td>Fiction</td>
+      </tr>
+    </table>
+  </div>
+  <!-- ========== End of Homework Activity ========== -->
+
+</body>
+</html>
+<!-- partial -->
+  
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Lesson 2 Homework</title>
+  
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Set up document metadata -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inspirational Quote Card</title>
+</head>
+<body>
+    <!-- Create header with title -->
+    <header>
+        <h1>Daily Inspiration</h1>
+    </header>
+    
+    <!-- Create main content with quote card and button -->
+    <main>
+        <section class="quote-card">
+            <p id="quote">"The only way to do great work is to love what you do." – Steve Jobs</p>
+            <img src="https://platform.theverge.com/wp-content/uploads/sites/2/chorus/uploads/chorus_asset/file/13874040/stevejobs.1419962539.png?quality=90&strip=all&crop=0,21.301746284674,100,57.396507430653" alt="Steve Jobs Photo">
+            <button id="colorBtn">Change Color</button>
+        </section>
+    </main>
+    
+    <!-- Apply CSS styling and JavaScript interactivity -->
+    <style type="text/css">
+        body { font-family: Arial, sans-serif; background-color: #fff3e0; margin: 20px; color: #333; }
+        header { background-color: #f28c38; text-align: center; padding: 10px; border-radius: 5px; }
+        header h1 { color: #fff; margin: 0; }
+        main { display: flex; justify-content: center; align-items: center; min-height: 80vh; }
+        .quote-card { background-color: #fff; border: 2px solid #f28c38; border-radius: 5px; padding: 15px; text-align: center; display: flex; flex-direction: column; gap: 10px; max-width: 300px; }
+        .quote-card img { width: 100px; height: 100px; object-fit: cover; margin: 0 auto; }
+        button { background-color: #fff; border: 2px solid #f28c38; padding: 5px 10px; cursor: pointer; }
+    </style>
+    <script type="text/javascript">
+        const btn = document.getElementById('colorBtn');
+        const quote = document.getElementById('quote');
+        const colors = ['#ffe0b2', '#ffcc80', '#ffb300'];
+        let index = 0;
+        btn.onclick = () => {
+            quote.style.backgroundColor = colors[index % colors.length];
+            index++;
+        };
+    </script>
+</body>
+</html>
+<!-- partial -->
+  
+</body>
+</html>

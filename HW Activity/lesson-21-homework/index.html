@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Lesson 21 Homework</title>
+  
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mini Carnival</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+<style>
+body {background:#f8f9fa;}
+.card {transition: transform 0.2s; cursor:pointer;}
+.card:hover {transform: translateY(-5px);}
+.tile {color:#fff; padding:2rem; border-radius:0.75rem;}
+.gradient-1 {background:linear-gradient(135deg,#ff6b6b,#f94d6a);}
+.gradient-2 {background:linear-gradient(135deg,#6bafff,#4da3f9);}
+.gradient-3 {background:linear-gradient(135deg,#6bff95,#4df97f);}
+.gradient-4 {background:linear-gradient(135deg,#ffd66b,#f9c94d);}
+.badge {font-size:0.8rem;}
+</style>
+</head>
+<body>
+
+<div class="container py-5">
+
+  <!-- Carnival Rides -->
+  <h2 class="mb-4">🎢 Carnival Rides</h2>
+  <div class="row g-4 mb-5">
+    <div class="col-md-3"><div class="tile gradient-1 text-center">Ferris Wheel<br><span class="badge bg-light text-dark">Classic</span></div></div>
+    <div class="col-md-3"><div class="tile gradient-2 text-center">Roller Coaster<br><span class="badge bg-light text-dark">Popular</span></div></div>
+    <div class="col-md-3"><div class="tile gradient-3 text-center">Carousel<br><span class="badge bg-light text-dark">New</span></div></div>
+    <div class="col-md-3"><div class="tile gradient-4 text-center">Bumper Cars<br><span class="badge bg-light text-dark">Fun</span></div></div>
+  </div>
+
+  <!-- Game Booths Tabs -->
+  <h2 class="mb-4">🎯 Game Booths</h2>
+  <ul class="nav nav-pills mb-3" role="tablist">
+    <li class="nav-item"><button class="nav-link active" data-bs-toggle="pill" data-bs-target="#tabRing">Ring Toss</button></li>
+    <li class="nav-item"><button class="nav-link" data-bs-toggle="pill" data-bs-target="#tabDarts">Dart Games</button></li>
+    <li class="nav-item"><button class="nav-link" data-bs-toggle="pill" data-bs-target="#tabShoot">Shooting Range</button></li>
+  </ul>
+  <div class="tab-content mb-5">
+    <div class="tab-pane fade show active" id="tabRing">
+      <div class="row g-4">
+        <div class="col-md-4"><div class="card p-3">Classic Ring Toss<br><span class="badge bg-success">Popular</span></div></div>
+        <div class="col-md-4"><div class="card p-3">Glow-in-the-Dark Toss<br><span class="badge bg-warning">New</span></div></div>
+      </div>
+    </div>
+    <div class="tab-pane fade" id="tabDarts">
+      <div class="row g-4">
+        <div class="col-md-4"><div class="card p-3">Balloon Pop<br><span class="badge bg-info">Fun</span></div></div>
+        <div class="col-md-4"><div class="card p-3">Prize Target<br><span class="badge bg-primary">Top</span></div></div>
+      </div>
+    </div>
+    <div class="tab-pane fade" id="tabShoot">
+      <div class="row g-4">
+        <div class="col-md-4"><div class="card p-3">Duck Hunt<br><span class="badge bg-danger">Classic</span></div></div>
+        <div class="col-md-4"><div class="card p-3">Water Gun Race<br><span class="badge bg-success">Popular</span></div></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Prize Leaderboard -->
+  <h2 class="mb-4">🏆 Prize Leaderboard</h2>
+  <ol class="list-group list-group-numbered mb-5">
+    <li class="list-group-item d-flex justify-content-between align-items-start">
+      <div class="ms-2 me-auto"><div class="fw-bold">Sophia</div><span class="small text-muted">Ring Toss Champion</span></div>
+      <span class="badge bg-warning rounded-pill">Gold</span>
+    </li>
+    <li class="list-group-item d-flex justify-content-between align-items-start">
+      <div class="ms-2 me-auto"><div class="fw-bold">Liam</div><span class="small text-muted">Dart Master</span></div>
+      <span class="badge bg-secondary rounded-pill">Silver</span>
+    </li>
+    <li class="list-group-item d-flex justify-content-between align-items-start">
+      <div class="ms-2 me-auto"><div class="fw-bold">Olivia</div><span class="small text-muted">Shooting Range Ace</span></div>
+      <span class="badge rounded-pill" style="background:#cd7f32;color:#fff">Bronze</span>
+    </li>
+  </ol>
+
+  <!-- Carnival Stats -->
+  <h2 class="mb-4">📊 Carnival Stats</h2>
+  <div class="row g-4">
+    <div class="col-md-3"><div class="card p-4 gradient-1 text-center">Tickets Sold<br><strong>1500+</strong></div></div>
+    <div class="col-md-3"><div class="card p-4 gradient-2 text-center">Games Played<br><strong>800+</strong></div></div>
+    <div class="col-md-3"><div class="card p-4 gradient-3 text-center">Visitors Today<br><strong>500</strong></div></div>
+    <div class="col-md-3"><div class="card p-4 gradient-4 text-center">Prizes Won<br><strong>250+</strong></div></div>
+  </div>
+
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+<!-- partial -->
+  
+</body>
+</html>
